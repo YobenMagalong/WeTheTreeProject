@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeTheTree.Views.TreeDetailPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Entry x:Name="TreeID" Text="{Binding treeid}"/>
+                <Entry x:Name="CommonName" Text="{Binding commonname}"/>
+                <Entry x:Name="ScientificName" Text="{Binding scientificname}"/>
+                <Entry x:Name="Notes" Text="{Binding notes}"/>
+                <Entry x:Name="Height" Text="{Binding height}"/>
+                <Entry x:Name="DMB" Text="{Binding dmb}"/>
+                <Entry x:Name="TrunkWoods" Text="{Binding trunkwoods}"/>
+                <Entry x:Name="Mushroom" Text="{Binding mushroom}"/>
+                <Entry x:Name="Canopy" Text="{Binding canopy}"/>
+                <Entry x:Name="CanopyPerimeter" Text="{Binding canopyperimeeter}"/>
+                <Entry x:Name="Leaves" Text="{Binding leaves}"/>
+                <Entry x:Name="Trunk" Text="{Binding trunk}"/>
+                <Entry x:Name="Mulch" Text="{Binding mulch}"/>
+
+                <Button Text="Update" Clicked="BtnUpdate"/>
+                <Button Text="Delete" Clicked="BtnDelete"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

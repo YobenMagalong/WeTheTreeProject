@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeTheTree.Views.ListView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid BackgroundColor="#F3F5F9" RowSpacing="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="180"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid BackgroundColor="ForestGreen" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <StackLayout Margin="0,-40,0,0" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Label TextColor="White" FontSize="40" HorizontalTextAlignment="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <FormattedString.Spans>
+                                        <Span Text="We " FontSize="40" FontAttributes="Bold"/>
+                                        <Span Text="TheTree"/>
+                                    </FormattedString.Spans>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Label Text="'Focusing on Greener Future" TextColor="White" FontSize="15" HorizontalTextAlignment="Center" Margin="0,-10,0,0"/>
+                    </StackLayout>
+                </Grid>
+            </Grid>
+            <ListView Grid.Row="1" ItemsSource="{Binding Trees}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation = "Horizontal">
+                                <Label Text="{Binding treeid}"/>
+                                <Label Text="{Binding commonname}"/>
+                                <Label Text="{Binding scientificname}"/>
+                                <Label Text="{Binding notes}"/>
+                                <Label Text="{Binding height}"/>
+                                <Label Text="{Binding dmb}"/>
+                                <Label Text="{Binding trunkwoods}"/>
+                                <Label Text="{Binding mushroom}"/>
+                                <Label Text="{Binding canopy}"/>
+                                <Label Text="{Binding canopyperimeter}"/>
+                                <Label Text="{Binding leaves}"/>
+                                <Label Text="{Binding trunk}"/>
+                                <Label Text="{Binding mulch}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

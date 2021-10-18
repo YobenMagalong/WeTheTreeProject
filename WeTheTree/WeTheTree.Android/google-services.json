@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "207750904464",
+    "project_id": "wethetree",
+    "storage_bucket": "wethetree.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207750904464:android:108aa44302f3fa99e67615",
+        "android_client_info": {
+          "package_name": "com.companyname.wethetree"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "207750904464-shrp9jejs9bbt3kddnj41kednlmttv5e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkk81nF3KFD3EZF7BcHGSkLcj5ST-osT0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "207750904464-shrp9jejs9bbt3kddnj41kednlmttv5e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
